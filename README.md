@@ -30,6 +30,10 @@ settings.py (项目的总配置文件)
 __init__.py (声明模块的文件)
 ```
 
+# 启动项目
+1. 进入manage.py同级目录
+2. python manage.py runserver [端口号] 默认8000
+
 # 创建应用
 1. 进入项目中manage.py同级目录
 2. 输入 python manage.py startapp xxx应用名称
@@ -37,5 +41,27 @@ __init__.py (声明模块的文件)
 
 # 应用目录
 ```
+|
+├──migrations
+|
+├──__init__.py
+|
+├──admin.py                       当前应用的管理系统配置
+|
+├──apps.py                        该应用的一些配置
+|
+├──modules.py                     数据模块 使用ORM框架
+|
+├──tests.py
+|
+├──views.py                       模板模块
+```
 
+# django 函数
+```
+Django url() 可以接收四个参数，分别是两个必选参数：regex、view 和两个可选参数：kwargs、name，接下来详细介绍这四个参数。
+regex: 正则表达式，与之匹配的 URL 会执行对应的第二个参数 view。
+view: 用于执行与正则表达式匹配的 URL 请求。
+kwargs: 视图使用的字典类型的参数。
+name: 用来反向获取 URL。
 ```
