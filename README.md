@@ -42,7 +42,7 @@ __init__.py (声明模块的文件)
 # 应用目录
 ```
 |
-├──migrations
+├──migrations                     数据迁移模块
 |
 ├──__init__.py
 |
@@ -52,9 +52,9 @@ __init__.py (声明模块的文件)
 |
 ├──modules.py                     数据模块 使用ORM框架
 |
-├──tests.py
+├──tests.py                       自动化测试模块
 |
-├──views.py                       模板模块
+├──views.py                       执行响应代码模块
 ```
 
 # django 函数
@@ -64,4 +64,10 @@ regex: 正则表达式，与之匹配的 URL 会执行对应的第二个参数 v
 view: 用于执行与正则表达式匹配的 URL 请求。
 kwargs: 视图使用的字典类型的参数。
 name: 用来反向获取 URL。
+```
+
+# templates
+```
+使用了Django模板语言（Django Template Language, DTL）
+可以使用第三方模板（如Jinja2）
 ```
