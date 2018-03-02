@@ -71,3 +71,10 @@ name: 用来反向获取 URL。
 使用了Django模板语言（Django Template Language, DTL）
 可以使用第三方模板（如Jinja2）
 ```
+
+# models
+```
+通常，一个model对应数据库中的一张数据表
+Django中models以类的形式表现
+它包含了一些基本字段以及数据的一些行为
+```
